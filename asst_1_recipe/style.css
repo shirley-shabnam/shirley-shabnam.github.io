@@ -1,0 +1,246 @@
+/* INTENTIONALLY UGLY STARTER STYLES */
+/* These styles are very, very ugly. */
+/* Time to make them attractive, legible, and usable */
+
+body {
+    font-family: "Instrument Serif", serif;
+    font-size: larger;
+    /* background-color: #0080ff; */
+    /* background-image: url("06-cookiebrown.png"); */
+    margin: 0;
+    padding: 0;
+} 
+
+.site-header {
+  display:grid;
+  grid-area: head;
+  color: black;
+  align-items: left;
+  padding: 2rem;
+  height: fit-content;
+}
+
+.recipe-container {
+    display: grid;
+    width: 100%;
+    grid-template-areas:
+        "hero"
+        "overview"
+        "main"
+        "footer";
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-columns: 1fr;
+    min-height: 100vh;
+    background-color: #14213d;
+    /* padding: 20px; */
+}
+
+.hero-section {
+  display: grid;
+  grid-area: hero;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2rem;              
+}
+
+.hero-content {
+    display: flex;
+    gap: 0.5rem;
+    padding: 1.5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+}
+
+/* .recipe-header {
+    display: grid;
+    gap: 0.5rem;
+    padding: 1.5rem;
+    grid-template-columns: 1fr 1fr;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: fit-content;
+} */
+
+.om-nom {
+    display: flex;
+    max-width: 100%;
+    align-content: flex-start;
+    justify-content: center;
+}
+
+.overview-section {
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    text-align: center;
+    align-items: center;
+    grid-area: overview;
+    gap: 1.5rem;
+    justify-content: space-around;
+    align-items: center; 
+    background-color: #79ADDC;
+    padding: 1%;
+}
+
+.meta-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+    color: black;
+    font-size: large;
+}
+
+.main-section {
+    display:grid;
+    grid-area: main;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: flex-start;
+    position: relative;
+    gap: 2rem;
+    padding: 1rem;
+    background-color: #f6bd60;
+}
+
+/* .recipe-meta {
+    background-color: orange;
+    border: 2px dashed purple;
+} */
+
+.recipe-description {
+    /* background-color: aqua; */
+    font-size: 25px;
+    line-height: 1.2;
+    max-width: 25rem;
+    flex-wrap: wrap;
+    color: rgb(199, 212, 213);
+}
+
+.ingredients-section {
+    text-align: left;
+    line-height: 2.5;
+    align-items: flex-start;
+    max-width: 100%;
+    padding: 2rem;
+    justify-content: center;
+}
+
+.ingredients-list li {
+    width: 100%;
+    /* margin-bottom: 1rem; */
+    list-style-type: disc;
+}
+
+.instructions-section {
+    text-align: left;
+    line-height: 2;
+    max-width: 100%;
+    padding: 2rem;
+    justify-content: center;
+}
+
+.ingredients-section h2 {
+    text-align: center;
+    font-family: "Bricolage Grotesque", sans-serif;
+}
+
+.instruction-step li{
+    align-items: flex-start;
+    /* padding-left: 2%; */
+}
+
+.instructions-section h2 {
+    text-align: center;
+    font-family: "Bricolage Grotesque", sans-serif;
+}
+
+.recipe-footer {
+    display: grid;
+    grid-area: footer;
+    align-content: center;
+    text-align: center;
+    background-color: #79ADDC;
+    padding: 2rem;
+}
+
+.recipe-image {
+    width: 100%;
+    max-height: 30rem;
+    object-fit: contain;
+    gap: 1rem;
+    padding: 2rem;
+    /* border: 5px solid black; */
+}
+
+* {
+    margin: 2px;
+    padding: 1px;
+}
+
+.recipe-title {
+    /* font-optical-sizing: auto; */
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+    font-size: 60px;
+    max-width: 25rem;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+    color: #f6bd60;
+}
+
+
+.instrument-serif-regular {
+  font-family: "Instrument Serif", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.instrument-serif-regular-italic {
+  font-family: "Instrument Serif", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* Responsive stuff */
+
+@media (max-width: 48rem) {
+    
+    .recipe-container {
+        grid-template-columns: 1fr;
+        align-content: center;
+    }
+
+    .hero-section {
+        grid-template-columns: 1fr;
+    }
+
+    .recipe-image {
+        max-width: 80%;
+        align-content: center;
+    }
+
+    .overview-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .meta-item {
+        width: 100%;
+        max-width: 20rem;
+    }
+
+    .main-section {
+        grid-template-columns: 1fr;
+    }
+}
