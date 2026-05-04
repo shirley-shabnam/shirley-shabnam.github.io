@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Views - Framework Approach</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+</head>
+  <body>
+    <div class="container">
+        <div class="hero">
+            <img class="hero-img" src="hero-image.png">
+            <header>
+                <h1>Dining <i>simplified.</i></h1>
+            </header>
+        </div>
+
+        <p class="subtitle">Your safety is our priority. Check which restaurants in Maryland are in compliance.</p>
+        
+        
+        
+
+        <nav class="view-selector">
+            <button class="view-button" id="btn-categories" data-view="categories">Category View</button>
+            <button class="view-button" id="btn-table" data-view="table">Table View</button>
+            <button class="view-button" id="btn-stats" data-view="stats">Stats View</button>
+            <button class="view-button" id="btn-external" data-view="stats">External Library View</button>
+        </nav>
+
+        <main class="display-container">
+            <div id="data-display">
+                <div class="loading">Loading restaurant data...</div>
+            </div>
+        </main>
+
+        <!-- <section class="asst-box">
+            <h3>Your Assignment:</h3>
+            <ol>
+                <li><strong>Data Set:</strong>Using the supplied data.json...</li>
+                <li><strong>Complete the four presentation functions:</strong> Category/card groups, data table, statistics summary, external library</li>
+                <li><strong>Make each view useful:</strong> What information does each presentation emphasize?</li>
+                <li><strong>Add your own styling:</strong> Make it visually appealing and easy to use by editing the CSS</li>
+            </ol>
+            
+            <h3>Why Four Presentations?</h3>
+            <ul>
+                <li><strong>Category View:</strong> Emphasizes groupings and relationships, good for Cards</li>
+                <li><strong>Table View:</strong> Perfect for scanning specific data points and sorting</li>
+                <li><strong>Stats View:</strong> Highlights patterns and aggregate insights</li>
+                <li><strong>External Library:</strong> Gotta test you on it sometime.</li>
+            </ul>
+        </section> -->
+    </div>
+    <script type="module" src="./script.js" defer></script>
+    <!-- <script src="./d3.min.js"></script><script src="./d3.min.js"></script> -->
+</body>
+</html>
