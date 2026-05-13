@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abolition Scrollytelling</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mozilla+Text:wght@200..700&family=Noticia+Text:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://unpkg.com/enter-view"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/stickyfill/2.1.0/stickyfill.min.js"></script>
+</head>
+<body>
+
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <div class="cursor__ball" aria-hidden="true">
+        <svg height="30" width="30" focusable="false">
+            <circle cx="15" cy="15" r="15" stroke-width="0"/>
+        </svg>
+    </div>
+
+    <!--head -->
+    <header class="site-header">
+        <nav class="site-nav" aria-label="Site navigation">
+            <a href="#headline" class="nav-brand">abolition scrollytelling</a>
+            <a href="#references" class="nav-button">references</a>
+        </nav>
+    </header>
+
+    <main id="main-content">
+
+        <!--like a newspaper v serious-->
+        <section id="headline" class="headline-section" aria-label="Title: Are asylums obsolete?">
+            <div class="headline-inner">
+                <h1>are asylums<br>obsolete?</h1>
+                <h2>a data story. by <a href="https://shirleyshabnam.carrd.co/" class="navlink">shirley shabnam</a></h2>
+            </div>
+            <div class="scroll-arrow">
+                <span>scroll</span>
+                <div class="arrow"></div>
+            </div>
+        </section>
+
+        
+        <section id="abolition101" class="quote-panel" aria-label="Opening quote about psychiatry and abolition">
+            <div class="quote-wrapper">
+                <h3>As it functions in America and in all places touched by colonialism, <a href="https://projectlets.org/blog/asylums" class="quote-link">psychiatry is rooted in torture</a>, white supremacy, and a culture of shame and punishment. Yes, the asylum lives on — and the police love the asylum.</h3>
+                <!-- quote guy-->
+                <p class="quote-text">
+                    Abolition means that all the cages come down, including those that function under the guise of psychiatric 'care.'
+                </p>
+                <p class="quote-credit">— The Disability Visibility Project</p>
+            </div>
+        </section>
+
+    <!-- scrolly - switched come back later -->
+        <section id="racial-disparity" class="side-scrolly" aria-label="Scrollytelling: psychiatric diagnosis breakdown by race">
+            <div class="section-intro">
+                <h2 class="section-title">The myth of deinstitutionalization</h2>
+                <p class="section-dek">Excerpted from Stella Akua Mensah and Stefanie Lyn Kaufman-Mthimkhulu</p>
+            </div>
+
+            <div class="scrolly-side">
+                <figure class="scrolly-side-graphic" aria-label="Stacked bar chart showing psychiatric diagnosis breakdown by race">
+                    <svg id="chart-full"></svg>
+                    <div class="step-dots" id="racial-disparity-dots" role="tablist" aria-label="Jump to visualization step"></div>
+                </figure>
+                <article class="scrolly-side-text" aria-label="Scrolling narrative text">
+                    <div class="step" data-index="0">
+                        <p>There is a dangerous tale in the United States, one based on a myth of the deinstitutionalization of psychiatric asylums. We are told that the asylum died and is a thing of the past. But those of us who have survived psychiatric incarceration know that not only did the asylum never die — it is, and always was, another prison.</p>
+                    </div>
+                    <div class="step" data-index="1">
+                        <p>As Hussein Abdilahi Bulhan states in <em>Frantz Fanon: The Revolutionary Psychiatrist</em>, "psychiatry like any therapy should be the meeting of two 'free' people." In our current society, this could not be further from the truth. Every state allows for a person to be involuntarily held for "treatment, observation, or stabilization."</p>
+                    </div>
+                    <div class="step" data-index="2">
+                        <p>As we talk about prison Abolition — discourse founded and spearheaded by revolutionary Black Women — we must reckon with the history of psychiatry. Both prisons and psychiatric institutions have an overrepresentation of BIPOC, use law enforcement transport, use solitary confinement, forcibly medicate people, and use physical restraints.</p>
+                    </div>
+                    <div class="step" data-index="3">
+                        <p>Prison culture is not solvable by 'funding the mental health system' more robustly. The mental 'health' system is fundamentally carceral — one of the many kindred systems that function to contain and surveil people, take away their locus of control, and limit their freedom.</p>
+                    </div>
+                    <div class="step" data-index="4">
+                        <p>If we share a capacity for diverse manifestations of distress and neurology, we must do away with the "sane"/"insane" binary and give each other permission to be free and find healing. The numbers begin to look very different when we account for who is actually being held.</p>
+                    </div>
+                    <div class="step" data-index="5">
+                        <p>Disability Justice and Restorative and Transformative Justice ask us to imagine the world we want to live in, collectively. We see us taking actual care of each other — not paternalizing and imprisoning each other while referring to this violence as "care."</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- -width overlay scrolly (survivor quotes)-->
+        <section id="scrolly-overlay" class="overlay-scrolly" aria-label="Scrollytelling: survivor testimony and correctional supervision data">
+            <div class="section-intro">
+                <h2 class="section-title">Parallels between psychiatric institutions and the Prison Industrial Complex</h2>
+                <p class="section-dek">Quotes from Sascha, a survivor of psychiatric incarceration with reference to the human right violated.<br> Content Warning: Graphic Descriptions of Psychiatric Violence</p>
+            </div>
+
+            <div class="scrolly">
+                <figure class="sticky" aria-label="Data visualization: correctional supervision disparities">
+                    <svg id="chart-side"></svg>
+                </figure>
+                <article class="overlay-steps" aria-label="Survivor testimony cards">
+                    
+                </article>
+            </div>
+        </section>
+
+        <!-- slider -->
+        <section id="interactive-time" class="interactive-section" aria-label="Interactive: correctional supervision rates over time, 2013 to 2023">
+            <div class="section-intro">
+                <h2 class="section-title">The gap, over time</h2>
+                <p class="section-dek">Drag the slider to watch how incarceration rates have shifted between 2013 and 2023. The disparity narrows — but never closes.</p>
+            </div>
+
+            <div class="interactive-wrapper">
+                <figure class="interactive-figure" aria-label="Bar chart showing correctional supervision rate by race for the selected year">
+                    <svg id="chart-interactive"></svg>
+                </figure>
+                <div class="slider-controls">
+                    <label class="slider-label" for="year-slider">Year: <span id="year-value">2013</span></label>
+                    <input type="range" id="year-slider" min="0" max="100" value="0" step="1">
+                    <div class="slider-track-labels">
+                        <span>2013</span>
+                        <span>2023</span>
+                    </div>
+                </div>
+                <div class="interactive-readout" aria-live="polite" aria-atomic="false">
+                    <div class="readout-card">
+                        <p class="readout-label">Black adults — 1 in</p>
+                        <p class="readout-value" id="readout-black" aria-label="Black adults: 1 in 13">13</p>
+                    </div>
+                    <div class="readout-card">
+                        <p class="readout-label">White adults — 1 in</p>
+                        <p class="readout-value" id="readout-white" aria-label="White adults: 1 in 49">49</p>
+                    </div>
+                    <div class="readout-card">
+                        <p class="readout-label">Disparity ratio</p>
+                        <p class="readout-value" id="readout-ratio" aria-label="Disparity ratio: 3.77 times">3.77×</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--  REFERENCES  -->
+        <footer id="references" class="site-footer" aria-label="References and further reading">
+            <div class="footer-inner">
+                <h1 class="footer-headline">Abolition must<br>include psychiatry.</h1>
+                <p class="footer-body">
+                    The world we want is already being built Non-carceral, loving forms of community care and crisis response are evolving around us. Project LETS, The Hearing Voices Network, Mad in America, Sins Invalid, Health Justice Commons, Western Mass Recovery Learning Community, and HEARD — among many others — have laid the foundation. Together, we build the new worlds we want to live in.
+                </p>
+
+                <div class="footer-references">
+                    <h3 class="footer-subhead">References &amp; Further Reading</h3>
+                    <ul class="ref-list">
+                        <li>Mensah, S. A. &amp; Kaufman-Mthimkhulu, S. L. — <a href="https://projectlets.org/blog/asylums" class="navlink">Project LETS: "Are Prisons Obsolete? Are Asylums?"</a></li>
+                        <li>Bulhan, H. A. — <em>Frantz Fanon and the Psychology of Oppression</em></li>
+                        <li>Disability Visibility Project — <a href="https://disabilityvisibilityproject.com/" class="navlink">disabilityvisibilityproject.com</a></li>
+                        <li>Mad in America — <a href="https://www.madinamerica.com/" class="navlink">madinamerica.com</a></li>
+                        <li>Survivor testimonies from Sascha Altman DuBrul, <em>The Icarus Project</em></li>
+                        <li>SAMHSA — Mental Health Client-Level Data, 2019</li>
+                        <li>Bureau of Justice Statistics — Correctional Populations, 2013–2023</li>
+                        <li>UN Office of the High Commissioner — Universal Declaration of Human Rights</li>
+                    </ul>
+                </div>
+
+                <p class="footer-credit">Built by <a href="https://shirleyshabnam.carrd.co/" class="navlink">shirley shabnam</a></p>
+            </div>
+        </footer>
+
+    </main>
+
+    <script src="./cursor.js"></script>
+    <script type="module" src="./script.js" defer></script>
+    <script type="module" src="./full-width.js" defer></script>
+    <script type="module" src="./interactive.js" defer></script>
+
+</body>
+</html>

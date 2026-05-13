@@ -1,0 +1,132 @@
+[
+    {
+        "RACE":"Black\/AA",
+        "MH1":"ADHD",
+        "count":15143
+    },
+    {
+        "RACE":"Black\/AA",
+        "MH1":"Alcohol or substance use disorders",
+        "count":29538
+    },
+    {
+        "RACE":"Black\/AA",
+        "MH1":"Anxiety disorders",
+        "count":73999
+    },
+    {
+        "RACE":"Black\/AA",
+        "MH1":"Bipolar disorders",
+        "count":96828
+    },
+    {
+        "RACE":"Black\/AA",
+        "MH1":"Conduct disorders",
+        "count":4339
+    },
+    {
+        "RACE":"Black\/AA",
+        "MH1":"Delirium\/dementia disorders",
+        "count":1844
+    },
+    {
+        "RACE":"Black\/AA",
+        "MH1":"Depressive disorders",
+        "count":215977
+    },
+    {
+        "RACE":"Black\/AA",
+        "MH1":"Oppositional defiant disorders",
+        "count":3726
+    },
+    {
+        "RACE":"Black\/AA",
+        "MH1":"Other disorders\/conditions",
+        "count":50496
+    },
+    {
+        "RACE":"Black\/AA",
+        "MH1":"Personality disorders",
+        "count":8766
+    },
+    {
+        "RACE":"Black\/AA",
+        "MH1":"Pervasive developmental disorders",
+        "count":3294
+    },
+    {
+        "RACE":"Black\/AA",
+        "MH1":"Schizophrenia or other psychotic disorders",
+        "count":210830
+    },
+    {
+        "RACE":"Black\/AA",
+        "MH1":"Trauma- and stressor-related disorders",
+        "count":90101
+    },
+    {
+        "RACE":"White",
+        "MH1":"ADHD",
+        "count":77388
+    },
+    {
+        "RACE":"White",
+        "MH1":"Alcohol or substance use disorders",
+        "count":133025
+    },
+    {
+        "RACE":"White",
+        "MH1":"Anxiety disorders",
+        "count":460619
+    },
+    {
+        "RACE":"White",
+        "MH1":"Bipolar disorders",
+        "count":374543
+    },
+    {
+        "RACE":"White",
+        "MH1":"Conduct disorders",
+        "count":7038
+    },
+    {
+        "RACE":"White",
+        "MH1":"Delirium\/dementia disorders",
+        "count":8389
+    },
+    {
+        "RACE":"White",
+        "MH1":"Depressive disorders",
+        "count":725786
+    },
+    {
+        "RACE":"White",
+        "MH1":"Oppositional defiant disorders",
+        "count":4771
+    },
+    {
+        "RACE":"White",
+        "MH1":"Other disorders\/conditions",
+        "count":184941
+    },
+    {
+        "RACE":"White",
+        "MH1":"Personality disorders",
+        "count":32306
+    },
+    {
+        "RACE":"White",
+        "MH1":"Pervasive developmental disorders",
+        "count":20197
+    },
+    {
+        "RACE":"White",
+        "MH1":"Schizophrenia or other psychotic disorders",
+        "count":316794
+    },
+    {
+        "RACE":"White",
+        "MH1":"Trauma- and stressor-related disorders",
+        "count":318591
+    }
+]

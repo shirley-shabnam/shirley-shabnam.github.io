@@ -1,0 +1,14 @@
+[
+  {
+    "race": "Black Adults",
+    "color": "#e63946",
+    "start": 13,
+    "end": 18
+  },
+  {
+    "race": "White Adults",
+    "color": "#e8a030",
+    "start": 49,
+    "end": 63
+  }
+]
